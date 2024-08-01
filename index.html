@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HEALTH CARE</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="shortcut icon" href="./Assests/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+  </head>
+  <body>
+    <div >
+      <nav class="navbar">
+        <div class="logo">
+          <img id="logoimg" src="./Assests/logo.png" alt="logo-png" />
+        </div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services" >Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#doctors">Doctors</a></li>
+        </ul>
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </nav>
+  
+      <div data-scroll-container id="data">
+        <section id="home-page">
+          <div id="home" class="page-container">
+            
+            <div class="text-section">
+              <div class="top-head">
+                <h6>Your Well-being, Our Priority ❤️</h6>
+              </div>
+              <div class="heading">
+                <h2>Find and Schedule</h2>
+                <h2 id="bluetext">Doctor Appointments</h2>
+              </div>
+              <p class="description" id="main-para">
+                Receive expert medical consultations, online prescriptions, and more
+                from qualified doctors. Enjoy on-demand healthcare at your fingertips.
+              </p>
+              <button id="book-appointment-btn" class="book-appointment-btn">
+                <span class="icon" ><img id="cal-img" src="./Assests/icon _Calendar Check.png" alt=""></span>
+                Book Appointment
+              </button>
+            </div>
+            
+            <div class="right-section">
+              <img id="img1" src="./Assests/mainpageimg.png" alt="">
+            </div>
+          </div>
+        
+          
+          <div id="appointment-dialog" class="dialog hidden">
+            <div class="dialog-content">
+              <span id="close-dialog" class="close-btn">&times;</span>
+              <h2>Book Appointment</h2>
+              <form id="appointment-form">
+                <div class="form-field">
+                  <label for="full-name">Full Name:</label>
+                  <input type="text" id="full-name" name="full-name" required>
+                </div>
+                <div class="form-field">
+                  <label for="phone-number">Phone Number:</label>
+                  <input type="tel" id="phone-number" name="phone-number" required>
+                </div>
+                <div class="form-field">
+                  <label for="appointment-date">Appointment Date:</label>
+                  <input type="date" id="appointment-date" name="appointment-date" required>
+                </div>
+                <div class="form-field">
+                  <label for="appointment-time">Appointment Time:</label>
+                  <input type="time" id="appointment-time" name="appointment-time" required>
+                </div>
+                <div class="form-actions">
+                  <button type="button" id="close-btn" class="close-btn">&times;</button>
+                  <button type="submit" id="confirm-btn" class="confirm-btn">Confirm</button>
+                  <div id="loading-spinner"></div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+    
+    
+    
+    
+        <section id="services" class="page2-container">
+          <div class="title">
+            <div class="first">
+              <h1>What We Do</h1>
+             
+            </div>
+            <div class="para">
+              <p>
+                We make healthcare accessible by providing a wide array of on-demand
+                medical services customized to your needs. Our platform connects you
+                with skilled online doctors who deliver expert medical advice,
+                prescribe medications, and offer swift refills whenever you need
+                them.
+              </p>
+            </div>
+          </div>
+          <div class="cards">
+           
+          </div>
+        </section>
+    
+    
+        <section id="about">
+          <div class="page3-container">
+            <div class="container" id="cont">
+              <div class="left-side">
+                
+                <img src="./Assests/aboutimg.png" alt="About Us" class="left-side-img">
+              </div>
+        
+              <div class="right-side">
+                <div class="txt-prt">
+                  <h1 class="title" id="title">About Us</h1>
+        
+                  <p class="description" id="para">
+                    Welcome to Health Care, your dependable ally in accessible and
+                    personalized healthcare. Our skilled doctors provide online
+                    consultations and specialized services, always putting your
+                    well-being first. Embark on a journey towards better health with
+                    us.
+                  </p>
+        
+                  <div class="list">
+                    <div class="list-item">
+                      <div class="hed">
+                        <span class="icon" id="pink-icon"> <img  src="./Assests/check-circle-solid-24-blue.png" alt="icon">  </span>
+                        <span class="list-title" id="list-ti">Choose a Specialist</span>
+                      </div>
+                      <div class="desc-para">
+                        <p class="list-description" >
+                          Discover your ideal specialist and schedule appointments
+                          effortlessly with Health Care. Our experienced doctors
+                          prioritize your health, providing personalized and expert
+                          care.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="list-item">
+                      <div class="hed">
+                        <span class="icon"  id="pink-icon"> <img src="./Assests/check-circle-solid-24-blue.png" alt="icon">  </span>
+                        <span class="list-title" id="list-ti">Make a Schedule</span>
+                      </div>
+                      <div class="desc-para">
+                        <p class="list-description" >
+                          Select the date and time that work best for you, and our
+                          committed medical team will provide personalized care to
+                          ensure your well-being.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="list-item">
+                      <div class="hed">
+                        <span class="icon"  id="pink-icon"> <img src="./Assests/check-circle-solid-24-blue.png" alt="icon"> </span>
+                        <span class="list-title" id="list-ti">Get Your Solutions</span>
+                      </div>
+                      <div class="desc-para">
+                        <p class="list-description">
+                          Our skilled doctors and specialists offer professional
+                          guidance and customized treatment plans, dedicated to
+                          helping you achieve optimal health.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="page5-container">
+              <div class="container">
+                <div class="left">
+                  <div class="txt-prt" id="left-text">
+                    <h1 class="title" id="title2">Why Choose Health Care</h1>
+                   
+          
+                    <p class="description" id="para-desc">
+                      Discover why Health Care is your top choice for expert, convenient, and personalized healthcare. Prioritize your well-being and join us on the path to better health and happiness.
+                    </p>
+          
+                    <div class="list">
+                      <div class="list-item">
+                        <div class="hed">
+                          <span class="icon"> <img id="blue-icon" src="./Assests/check-circle-solid-24-blue.png" alt="icon">  </span>
+                          <span class="list-title" id="list-ti">Best Professional Doctors</span>
+                        </div>
+                      </div>
+                      <div class="list-item">
+                        <div class="hed">
+                          <span class="icon"> <img id="blue-icon" src="./Assests/check-circle-solid-24-blue.png" alt="icon">  </span>
+                          <span class="list-title" id="list-ti">Emergency Care</span>
+                        </div>
+                      </div>
+                      <div class="list-item">
+                        <div class="hed">
+                          <span class="icon"> <img id="blue-icon" src="./Assests/check-circle-solid-24-blue.png" alt="icon"> </span>
+                          <span class="list-title" id="list-ti">Enrollment Easy and Quick</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="right">
+                  <img src="./Assests/image 8.png" alt="Doctor Booking" class="image" id="img-mob" />
+                </div>
+              </div>
+            </div>
+          
+    
+        </section>
+    
+    
+    
+    
+        <section id="doctors">
+          <div class="con">
+            <div class="top">
+              <div class="left-text">
+                <h2 id="doc-tilt">Meet Our  Doctors</h2>
+              </div>
+              <div class="right-text">
+                <p id="right-para">Meet our exceptional team of specialist doctors, dedicated to providing top-notch healthcare services at Health Plus. Trust in their knowledge and experience to lead you towards a healthier and happier life.</p>
+              
+              </div>
+            </div>
+    
+            <div class="doc-cards" id="cards-doc">
+             <div class="doctors-carousel">
+              <div class="doctors-card">
+                <div class="doctor-card">
+                  <img src="./Assests/alicejohnson.jpg" alt="Dr. Alice Johnson" class="doctor-img">
+                  <h2 class="doctor-name">Dr. Alice Johnson</h2>
+                  <p class="doctor-description">Cardiologist</p>
+                </div>
+                <div class="doctor-card" id="sec-card">
+                  <img src="./Assests/janesmith.jpg" alt="Dr. Jane Smith" class="doctor-img">
+                  <h2 class="doctor-name">Dr. Jane Smith</h2>
+                  <p class="doctor-description" id="sec-para">Pediatric Specialist</p>
+                </div>
+                <div class="doctor-card">
+                  <img src="./Assests//johndoe.jpg" alt="Dr. John Doe" class="doctor-img">
+                  <h2 class="doctor-name">Dr. John Doe</h2>
+                  <p class="doctor-description">Orthopedic Surgeon</p>
+                </div>
+                         
+             </div>
+             
+              
+            </div>
+          </div>
+        </section>
+    
+      </div>
+      <footer class="footer">
+        <div class="footer-content">
+            <div class="logo">
+              <img src="./Assests/logo.png" alt="">
+                
+                
+            </div>
+            <div class="links" id="footer-links">
+                <div class="services">
+                   <div id="lastti"><h4 id="text">Services</h4></div> 
+                    <ul>
+                      <li id="ser-li" ><a href="#services" >Emergency Care</a></li>
+                      <li id="ser-li" ><a href="#services" >Heart Disease</a></li>
+                      <li id="ser-li" ><a href="#services" >Dental Care</a></li>
+                      <li id="ser-li" ><a href="#about">Prescription</a></li>
+                      <li id="ser-li" ><a href="#doctors">Insights for doctors</a></li>
+                    </ul>
+                </div>
+                <div class="legal">
+                  <div id="lastti"><h4 id="text">Legal</h4></div>                   
+                  <ul>
+                        <li class="legal-link" >General Info</li>
+                        <li class="legal-link" >Privacy Policy</li>
+                        <li class="legal-link" >Terms of Services</li>
+                        <li class="legal-link" >Consultations</li>
+                        <li class="legal-link" >How it Works</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; Health Care. All rights reserved.</p>
+        </div>
+    </footer>
+
+    </div>
+    
+    
+
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+  
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://unpkg.com/lenis@1.1.8/dist/lenis.min.js"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="script.js" type="module"></script>
+   
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-app.js";
+      import { getFirestore, collection, addDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-firestore.js";
+      
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyAB9ZZWoZ7OzQpyPZAbQ2rfDQrV5WasGZc",
+        authDomain: "healthcare-8117a.firebaseapp.com",
+        projectId: "healthcare-8117a",
+        storageBucket: "healthcare-8117a.appspot.com",
+        messagingSenderId: "869221819644",
+        appId: "1:869221819644:web:48f00f14099b909c566379"
+      };
+  
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const db = getFirestore(app);
+  
+      document.addEventListener("DOMContentLoaded", () => {
+        const bookAppointmentBtn = document.getElementById("book-appointment-btn");
+        const dialog = document.getElementById("appointment-dialog");
+        const closeDialogBtn = document.getElementById("close-dialog");
+        const confirmBtn = document.getElementById("confirm-btn");
+        const closeBtn = document.getElementById("close-btn");
+        const loadingSpinner = document.getElementById("loading-spinner"); // Add spinner element
+  
+        // show dialog box
+        function showDialog() {
+          dialog.classList.remove("hidden");
+          document.body.classList.add("no-scroll");
+        }
+  
+        // hide dialog box
+        function hideDialog() {
+          dialog.classList.add("hidden");
+          document.body.classList.remove("no-scroll");
+        }
+  
+        bookAppointmentBtn.addEventListener("click", showDialog);
+        closeDialogBtn.addEventListener("click", hideDialog);
+        closeBtn.addEventListener("click", hideDialog);
+  
+        confirmBtn.addEventListener("click", async (event) => {
+          event.preventDefault();
+          const fullName = document.getElementById("full-name").value;
+          const phoneNumber = document.getElementById("phone-number").value;
+          const appointmentDate = document.getElementById("appointment-date").value;
+          const appointmentTime = document.getElementById("appointment-time").value;
+  
+          try {
+            loadingSpinner.classList.remove("hidden"); // Show spinner
+            await addDoc(collection(db, "appointments"), {
+              fullName,
+              phoneNumber,
+              appointmentDate,
+              appointmentTime,
+              timeStamp: serverTimestamp(),
+            });
+            // Confirm toast here
+            Toastify({
+              text: "You will be approached soon!",
+              className: "info",
+              style: {
+                background:
+                  "linear-gradient(45deg, #DCFCE7, #DCFCE7)",
+                  color: '#008000'
+                  
+              },
+              offset: {
+                x: 50,
+                y: 10,
+              },
+            }).showToast();
+          } catch (error) {
+            console.error("Error adding document: ", error);
+            Toastify({
+              text: "Error booking appointment. Please try again.",
+              className: "error",
+              style: {
+                background:
+                  "linear-gradient(45deg, #FEE2E2, #FEE2E2)",
+                  color: '#aa0000'
+              },
+              offset: {
+                x: 50,
+                y: 10,
+              },
+            }).showToast();
+          } finally {
+            loadingSpinner.classList.add("hidden"); // Hide spinner
+            hideDialog();
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
+

@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Freeman&family=Magra:wght@400;700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+body,
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-top: 1.2vw;
+  font-family: "Magra", sans-serif;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: semi-bold;
+  margin-bottom: 10px;
+  color: blue;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: "Raleway", sans-serif;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 0 2vw;
+    width: 100%;
+  }
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 2vw;
+    font-family: "Magra", sans-serif;
+  }
+  .section {
+    padding: 0;
+    width: 100%;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+    font-weight: semi-bold;
+    margin-bottom: 10px;
+    color: blue;
+    font-family: "Magra", sans-serif;
+  }
+  p {
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 1vw 2vw;
+    font-family: "Raleway", sans-serif;
+  }
+}
